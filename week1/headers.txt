@@ -1,30 +1,33 @@
 "headers": {
     "expires": "Thu, 30 Jan 2020 00:20:09 GMT",
--Expires is a timestamp of when the entity expires, which it already has
+	-Expires is a timestamp of when the entity expires, which it already has
     "date": "Thu, 30 Jan 2020 00:20:09 GMT",
--The date and time of when the message was sent
+	-The date and time of when the message was sent
     "cache-control": "private, max-age=0, must-revalidate, no-transform",
--Tells all caching mechanisms whether they may cache this object, the max age is 0 so this was not cached
+	-Tells all caching mechanisms whether they may cache this object
     "etag": "\"iPPser6Mov75mJUb_EktR4oB1SI/b-YPv-ceoJth_chGPkd-TsNxhS0\"",
--ETag is the MD5 hash of the entity and used to check for modifications
+	-ETag is the MD5 hash of the entity and used to check for modifications
     "vary": "Origin, X-Origin",
-
+	-Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server
     "content-type": "application/json; charset=UTF-8",
-
+	-Indicates the media type of the resource
     "x-content-type-options": "nosniff",
-
+	-Disables MIME sniffing and forces browser to use the type given in Content-Type
     "x-frame-options": "SAMEORIGIN",
-
+	-Indicates whether a browser should be allowed to render a page in a <frame>, <iframe>, <embed> or <object>
     "x-xss-protection": "1; mode=block",
-
+	-Enables cross-site scripting filtering
     "content-length": "41778",
-
+	-The size of the resource, in decimal number of bytes
     "server": "GSE",
-
+	-A name for the server
     "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000",
-
+	-Used to list alternate ways to reach this service
     "connection": "close"
+	-Controls whether the network connection stays open after the current transaction finishes
   },
   "requestHeader": {
     "Accept": "application/json, text/plain, */*",
+	-Informs the server about the types of data that can be sent back
     "User-Agent": "axios/0.18.1"
+	-Contains a characteristic string that allows the network protocol peers to identify the application type, operating system, software vendor or software version of the requesting software user agent
