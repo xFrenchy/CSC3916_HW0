@@ -1,0 +1,30 @@
+"headers": {
+    "expires": "Thu, 30 Jan 2020 00:20:09 GMT",
+-Expires is a timestamp of when the entity expires, which it already has
+    "date": "Thu, 30 Jan 2020 00:20:09 GMT",
+-The date and time of when the message was sent
+    "cache-control": "private, max-age=0, must-revalidate, no-transform",
+-Tells all caching mechanisms whether they may cache this object, the max age is 0 so this was not cached
+    "etag": "\"iPPser6Mov75mJUb_EktR4oB1SI/b-YPv-ceoJth_chGPkd-TsNxhS0\"",
+-ETag is the MD5 hash of the entity and used to check for modifications
+    "vary": "Origin, X-Origin",
+
+    "content-type": "application/json; charset=UTF-8",
+
+    "x-content-type-options": "nosniff",
+
+    "x-frame-options": "SAMEORIGIN",
+
+    "x-xss-protection": "1; mode=block",
+
+    "content-length": "41778",
+
+    "server": "GSE",
+
+    "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000",
+
+    "connection": "close"
+  },
+  "requestHeader": {
+    "Accept": "application/json, text/plain, */*",
+    "User-Agent": "axios/0.18.1"
